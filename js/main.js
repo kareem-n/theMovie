@@ -67,7 +67,7 @@ function display(x) {
   var temp = ``;
   for (let i = 0; i < x.length; i++) {
     temp += `
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-md-6">
     <div class="itemmm rounded-3 position-relative overflow-hidden">
         <img src="https://image.tmdb.org/t/p/w500${x[i].poster_path}" class="w-100" alt="">
         <div class="caption p-4">
@@ -88,7 +88,7 @@ function displaySearch(x) {
   for (var i = 0; i < cont.length; i++) {
     if (cont[i].original_title.includes(x) == true) {
       temp += `
-            <div class="col-lg-4">
+            <div class="col-lg-4 col-md-6">
             <div class="itemmm rounded-3 position-relative overflow-hidden">
                 <img src="https://image.tmdb.org/t/p/w500${cont[i].poster_path}" class="w-100" alt="">
                 <div class="caption p-4">

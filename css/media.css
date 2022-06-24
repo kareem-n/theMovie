@@ -1,4 +1,14 @@
-@media (min-width: 576px) {  }
+@media screen and (min-width:0px) and (max-width:576px ) {
+    #ppp{
+        padding-left: 13%;
+    }
+}
+
+@media (min-width: 576px) { 
+    #ppp{
+        padding-left: 10%;
+    }
+ }
 
 @media (min-width: 768px) {  }
 

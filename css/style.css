@@ -2,6 +2,7 @@ body {
   background-color: #0d0d0d;
 }
 .sideBar {
+  background-color: black;
   position: fixed;
   top: 0;
   bottom: 0;
