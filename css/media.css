@@ -10,7 +10,11 @@
     }
  }
 
-@media (min-width: 768px) {  }
+@media (min-width: 768px) { 
+    #ppp{
+        padding-left: 0px;
+    }
+ }
 
 @media (min-width: 992px) {  }
 
