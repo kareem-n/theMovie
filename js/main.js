@@ -45,11 +45,11 @@ async function apiWord(x) {
 
 let word = document.querySelector("#word");
 $("#word").keyup(function () {
-  apiWord(word.value) ;
+  apiWord(word.value);
 });
 let seko = document.querySelector("#seko");
 $("#seko").keydown(function () {
-    displaySearch(seko.value) ; 
+  displaySearch(seko.value);
 });
 
 (function () {
@@ -83,11 +83,11 @@ function display(x) {
   document.querySelector("#content").innerHTML = temp;
 }
 
-function displaySearch(x){
-    temp =`` ; 
-    for( var i=0 ; i<cont.length ; i++ ){
-        if( cont[i].original_title.includes(x) == true ){
-            temp += `
+function displaySearch(x) {
+  temp = ``;
+  for (var i = 0; i < cont.length; i++) {
+    if (cont[i].original_title.includes(x) == true) {
+      temp += `
             <div class="col-lg-4">
             <div class="itemmm rounded-3 position-relative overflow-hidden">
                 <img src="https://image.tmdb.org/t/p/w500${cont[i].poster_path}" class="w-100" alt="">
@@ -99,12 +99,11 @@ function displaySearch(x){
                 </div>
             </div>
         </div>
-            `
-        }
+            `;
     }
-    document.querySelector("#search_content").innerHTML = temp ; 
-}   
-
+  }
+  document.querySelector("#search_content").innerHTML = temp;
+}
 
 let name1 = document.querySelector("#name");
 let email = document.querySelector("#email");
@@ -112,10 +111,10 @@ let phone = document.querySelector("#phone");
 let age = document.querySelector("#age");
 let password = document.querySelector("#password");
 let repassword = document.querySelector("#repassword");
-let test = false;
 
-function submit() {
+function submit(xxx) {
   if (
+    xxx == true &&
     name1.value != "" &&
     email.value != "" &&
     phone.value != "" &&
@@ -123,9 +122,9 @@ function submit() {
     password.value != "" &&
     repassword.value != ""
   ) {
-    $(".disabled").removeClass("disabled");
+    $("#lorem").removeClass("disabled");
   } else {
-    $(".disabled").addClass("disabled");
+    $("#lorem").addClass("disabled");
   }
 }
 
@@ -134,10 +133,11 @@ function nameCheack() {
   $(name1).keyup(function (e) {
     if (regexNamw.test(name1.value) == false || name1.value == "") {
       $(e.target).siblings().css("display", "block");
+      submit(false);
     } else {
       $(e.target).siblings().css("display", "none");
+      submit(true);
     }
-    submit();
   });
 }
 
@@ -147,10 +147,11 @@ function emailCheack() {
   $(email).keyup(function (e) {
     if (regexEmail.test(email.value) == false || email.value == "") {
       $(e.target).siblings().css("display", "block");
+      submit(false);
     } else {
       $(e.target).siblings().css("display", "none");
+      submit(true);
     }
-    submit();
   });
 }
 
@@ -159,10 +160,11 @@ function phoneCheack() {
   $(phone).keyup(function (e) {
     if (regexPhone.test(phone.value || phone.value == "") == false) {
       $(e.target).siblings().css("display", "block");
+      submit(false);
     } else {
       $(e.target).siblings().css("display", "none");
+      submit(true);
     }
-    submit();
   });
 }
 
@@ -177,10 +179,11 @@ function ageCheck() {
       age.value == ""
     ) {
       $(e.target).siblings().css("display", "block");
+      submit(false);
     } else {
       $(e.target).siblings().css("display", "none");
+      submit(true);
     }
-    submit();
   });
 }
 
@@ -190,10 +193,11 @@ function passCheck() {
   $(password).keyup(function (e) {
     if (regexPass.test(password.value) == false) {
       $(e.target).siblings().css("display", "block");
+      submit(false);
     } else {
       $(e.target).siblings().css("display", "none");
+      submit(true);
     }
-    submit();
   });
 }
 
@@ -201,14 +205,13 @@ function repassCheck() {
   $(repassword).keyup(function (e) {
     if (password.value != repassword.value) {
       $(e.target).siblings().css("display", "block");
+      submit(false);
     } else {
       $(e.target).siblings().css("display", "none");
+      submit(true);
     }
-    submit();
   });
 }
-
-
 
 nameCheack();
 ageCheck();
