@@ -208,6 +208,8 @@ function repassCheck() {
   });
 }
 
+
+
 nameCheack();
 ageCheck();
 emailCheack();
