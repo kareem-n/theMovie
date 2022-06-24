@@ -12,16 +12,27 @@
 
 @media (min-width: 768px) { 
     #ppp{
-        padding-left: 0px;
+        padding-left: 0% !important;
     }
  }
 
-@media (min-width: 992px) {  }
+@media (min-width: 992px) { 
+    #ppp{
+        padding-left: 0% !important;
+    }
+ }
 
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+    #ppp{
+        padding-left: 0% !important;
+    }
+ }
 
 @media (min-width: 1400px) { 
     .container{
         width: 1140px !important;
+    }
+    #ppp{
+        padding-left: 0% !important;
     }
  }
