@@ -1,0 +1,92 @@
+body {
+  background-color: #0d0d0d;
+}
+.sideBar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -200px;
+  width: 200px;
+  display: flex;
+  z-index: 999;
+}
+#bar {
+  background-color: rgb(236, 236, 236);
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  top: 0;
+  width: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+.globe i {
+  cursor: pointer;
+}
+#list i {
+  transition: 0.3s;
+}
+#list i:hover {
+  color: rgb(255, 112, 112);
+}
+#close {
+  font-size: 22px;
+  cursor: pointer;
+}
+#list {
+  width: 100%;
+}
+#list li {
+  padding: 10px;
+  padding-left: 20px;
+}
+#list li a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+#list li a:hover {
+  color: rgb(255, 112, 112);
+}
+#lisst{
+    position: relative;
+    top: 100%;
+}
+input{
+    color: #fff !important;
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #fff !important;
+}
+input::placeholder {
+    text-align: center !important;
+}
+.caption
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-weight: bold;
+}
+.itemmm:hover .caption
+{
+    top: 0;
+    opacity: 1;
+}
+.message{
+    background-color: rgba(255, 162, 162, 0.521);
+    color: #fff;
+    padding: 10px;
+    display: none;    
+}

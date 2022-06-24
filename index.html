@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>the moviee</title>
+
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <div id="sideBar" class="sideBar">
+      <div class="py-3 d-flex flex-column justify-content-between" id="list">
+        <div class="overflow-hidden">
+          <ul id="lisst" class="list-unstyled">
+            <li>
+              <a href="#now_playing" category="now_playing">Now Playing</a>
+            </li>
+            <li>
+              <a href="#popular" category="popular">Popular</a>
+            </li>
+
+            <li>
+              <a href="#top_rated" category="top_rated">Top Rated</a>
+            </li>
+            <li>
+              <a href="#trending" category="trending">Trending</a>
+            </li>
+            <li>
+              <a href="#upcoming" category="upcoming">Upcoming</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="p-3">
+          <div class="text-white">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands px-2 fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <h6 class="text-muted mt-2">All right reversed @kareem 2022</h6>
+        </div>
+      </div>
+
+      <div class="py-4" id="bar">
+        <img src="imgs/logo.png" class="w-75" alt="" />
+
+        <i id="close" class="fa-solid fa-bars"></i>
+        <div class="d-flex globe flex-column">
+          <i class="fa-solid mb-2 fa-globe"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-5">
+      <div id="searchBox" class="d-flex">
+        <input
+          class="form-control me-4"
+          placeholder="get movie by word..."
+          type="text"
+          name=""
+          id="word"
+        />
+        <input
+          class="form-control"
+          placeholder="search"
+          type="text"
+          name=""
+          id="seko"
+        />
+      </div>
+      <div id="search_content" class="row gy-4 mt-5">
+        
+      </div>
+
+      <div id="content" class="row gy-4 mt-5">
+        
+      </div>
+
+      <div id="contact" class="text-white mt-5">
+        <h2>Contact Us...</h2>
+        <div class="row gy-4 mt-2">
+          <div class="col-lg-6">
+            <input
+              class="form-control"
+              id="name"
+              placeholder="Name"
+              type="text"
+            />
+            <div class="message">enter valid name</div>
+          </div>
+          <div class="col-lg-6">
+            <input
+              class="form-control"
+              id="email"
+              placeholder="email"
+              type="text"
+            />
+            <div class="message">enter valid email</div>
+          </div>
+          <div class="col-lg-6">
+            <input
+              class="form-control"
+              id="phone"
+              placeholder="phone"
+              type="number"
+            />
+            <div class="message">enter valid phone</div>
+          </div>
+          <div class="col-lg-6">
+            <input
+              class="form-control"
+              id="age"
+              placeholder="age"
+              type="text"
+            />
+            <div class="message">enter valid age</div>
+          </div>
+          <div class="col-lg-6">
+            <input
+              class="form-control"
+              id="password"
+              placeholder="password"
+              type="text"
+            />
+            <div class="message">
+              A password contains at least eight characters, including at least
+              one number and includes lowerCase and
+              special characters, for example #, ?, !.
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <input
+              class="form-control"
+              id="repassword"
+              placeholder="reEnter password"
+              type="text"
+            />
+            <div class="message">entre valid Repassword</div>
+          </div>
+          <div class="col-12">
+            <button class="btn disabled btn-outline-danger">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
