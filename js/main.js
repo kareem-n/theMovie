@@ -45,7 +45,7 @@ async function apiWord(x) {
 
 let word = document.querySelector("#word");
 $("#word").keyup(function () {
-  apiWord(word.value);
+  apiWord(word.value.toLowerCase());
 });
 let seko = document.querySelector("#seko");
 $("#seko").keyup(function () {
