@@ -48,7 +48,7 @@ $("#word").keyup(function () {
   apiWord(word.value);
 });
 let seko = document.querySelector("#seko");
-$("#seko").keydown(function () {
+$("#seko").keyup(function () {
   displaySearch(seko.value);
 });
 
@@ -84,9 +84,10 @@ function display(x) {
 }
 
 function displaySearch(x) {
+  
   temp = ``;
   for (var i = 0; i < cont.length; i++) {
-    if (cont[i].original_title.includes(x) == true) {
+    if (cont[i].original_title.toLowerCase().includes(x.toLowerCase()) == true) {
       temp += `
             <div class="col-lg-4 col-md-6">
             <div class="itemmm rounded-3 position-relative overflow-hidden">
