@@ -49,7 +49,13 @@ $("#word").keyup(function () {
 });
 let seko = document.querySelector("#seko");
 $("#seko").keyup(function () {
-  displaySearch(seko.value);
+  if( seko.value == "" ){
+    $('#search_content').html('')  ; 
+    console.log(000);
+  }else{
+    displaySearch(seko.value)
+  }
+  
 });
 
 (function () {
