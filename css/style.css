@@ -51,43 +51,93 @@ body {
 #list li a:hover {
   color: rgb(255, 112, 112);
 }
-#lisst{
-    position: relative;
-    top: 100%;
+#lisst {
+  position: relative;
+  top: 100%;
 }
-input{
-    color: #fff !important;
-    background-color: transparent !important;
-    border: none !important;
-    border-bottom: 1px solid #fff !important;
+input {
+  color: #fff !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-bottom: 1px solid #fff !important;
 }
 input::placeholder {
-    text-align: center !important;
+  text-align: center !important;
 }
-.caption
-{
-    background-color: rgba(255, 255, 255, 0.7);
-    opacity: 0;
-    position: absolute;
-    top: 100%;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transition: 1s;
-    font-weight: bold;
+.caption {
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+  font-weight: bold;
 }
-.itemmm:hover .caption
-{
-    top: 0;
-    opacity: 1;
+.itemmm {
+  cursor: pointer;
 }
-.message{
-    background-color: rgba(255, 162, 162, 0.521);
-    color: #fff;
-    padding: 10px;
-    display: none;    
+.itemmm img {
+  transition: 1s;
+}
+.itemmm:hover img {
+  transform: scale(1.1);
+}
+.itemmm:hover .caption {
+  top: 0;
+  opacity: 1;
+}
+.message {
+  background-color: rgba(255, 162, 162, 0.521);
+  color: #fff;
+  padding: 10px;
+  display: none;
+}
+.lightBox {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.lightItem {
+  width: 55%;
+  height: 70%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-position: center;
+  background-size: cover;
+}
+#exit i {
+  position: absolute;
+  font-size: 22px;
+  cursor: pointer;
+  right: 15px;
+  top: 20px;
+  z-index: 99;
+}
+#lightBox .overlay {
+  background-color: rgba(0, 31, 51, 0.7);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+.lightItem span {
+  border-radius: 50%;
+  border: 1px solid #00a6cf;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 15px 10px;
+  display: inline-block;
+  text-align: center;
 }
