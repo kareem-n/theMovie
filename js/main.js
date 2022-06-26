@@ -81,7 +81,7 @@ function lightBoxDiplay(data) {
   </div>
   `;
   document.querySelector("#lightBox_content").innerHTML = temp;
-  $("#lightBox_content").slideDown(1000);
+  $("#lightBox_content").slideDown(600);
 }
 
 let word = document.querySelector("#word");
@@ -277,7 +277,7 @@ function repassCheck() {
 $("#exit i").click(function () {
   $("#lightBox").css("display", "none");
   $("#lightBox_content").html("");
-  $("#lightItem").css("backgroundImage", "url()");
+  $("#lightItem").css("backgroundImage", "none");
 });
 
 nameCheack();
